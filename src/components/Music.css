@@ -1,0 +1,63 @@
+.Music {
+    max-width: 18em;
+    max-height: 35em;
+    background-color: #01172b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+h1, h2, h3, h4, h5, p {
+    cursor: default;
+}
+
+.title {
+    cursor: pointer;
+}
+
+.poster {
+    z-index: 1;
+    width: min(80%, 20em);
+    transition: all .25s ease-in;
+    padding: .3em;
+}
+
+.poster:hover {
+    transform: scale(1.1) rotate(1deg);
+    border-radius: .1em;
+    border: .1em solid #6f9fb8;
+}
+
+a {
+    position: relative;
+    color: #a3cef7;
+    text-decoration: none;
+    transition: all .25s ease-in;
+    cursor: pointer;
+}
+  
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .1em;
+    border-radius: .1em;
+    background-color: #6f9fb8;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .25s ease-in-out;
+}
+
+a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.artist {
+    white-space: pre-wrap;
+    line-height: 2em;
+}

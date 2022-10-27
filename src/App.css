@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  background-color: #01101d;
+  min-height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+}
+
+.logo {
+  padding: 2em 0 0 0;
+  pointer-events: none;
+}
+
+.search {
+  min-width: 30%;
+  padding: 2em;
+  margin: 0 0 0 35%;
+  background-color: #105a9b;
+  color: #fff;
+}
+
+.search::placeholder {
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.albums {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 3em;
+  padding: 0;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
